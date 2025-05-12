@@ -1,0 +1,187 @@
+:root {
+    --color-primary: #001789;
+    --color-primary-hover: #0334b1; 
+    --color-primary-active: #000f6b;
+    --color-secondary: #3a71d0;
+    --color-secondary-hover: #0c4d9d;
+    --color-secondary-active: #003370;
+    --color-tertiary: #6c757d;
+    --color-tertiary-hover: #718394;
+    --color-tertiary-active: #555c63;
+    --color-danger: #c91d12; 
+    --color-danger-hover: #dd1b0d;
+    --color-danger-active: #9a1c0e;
+    --color-accept: #6bd46b;
+    --color-accept-hover: #70d870;
+    --color-accept-active: #5acf5a;
+
+    --color-event: #0056b3;
+    --color-event-hover: #043e7c;
+    --color-invited-event: #8f00b3;
+    --color-invited-event-hover: #770494;
+    --color-unavailable-event: #e66157;
+
+    --color-task-overdue: #dc3545;
+    --color-task-overdue-hover: #d31d2f;
+    --color-task-completed: #28a745;
+    --color-task-completed-hover: #268947;
+    --color-task-pending: #007bff;
+    --color-task-pending-hover: #1473da;
+    --color-task-late: #f79c15;
+    --color-task-late-hover: #eb9310;
+    
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-gray-light: #f1f3f5; 
+    --color-gray-dark: #6c757d; 
+    --color-gray-disabled: #d6d6d6;
+    --color-text-disabled: #9a9a9a;
+
+    --background-light: #f9f9f9; 
+    --background-dark: #001233; 
+    --background-light-blue: #bad4ed;
+
+    --text-primary: #001789; 
+    --text-secondary: #6c757d; 
+    --text-inverted: #ffffff; 
+    --text-disabled: var(--color-text-disabled);
+
+    --pomodoro-third-color: #008cff;
+
+    /* Button Colors */
+    --button-primary-bg: var(--color-primary);
+    --button-primary-hover-bg: var(--color-primary-hover); 
+    --button-primary-active-bg: var(--color-primary-active); 
+    --button-primary-disabled-bg: var(--color-gray-disabled);
+    --button-primary-text: var(--color-white);
+
+    --button-secondary-bg: var(--color-secondary);
+    --button-secondary-hover-bg: var(--color-secondary-hover); 
+    --button-secondary-active-bg: var(--color-secondary-active);  
+    --button-secondary-disabled-bg: var(--color-gray-disabled);
+    --button-secondary-text: var(--color-white);
+
+    --button-tertiary-bg: var(--color-tertiary);
+    --button-tertiary-hover-bg: var(--color-tertiary-hover); 
+    --button-tertiary-active-bg: var(--color-tertiary-active);  
+    --button-tertiary-disabled-bg: var(--color-gray-disabled);
+    --button-tertiary-text: var(--color-white);
+
+    --button-danger-bg: var(--color-danger);
+    --button-danger-hover-bg: var(--color-danger-hover); 
+    --button-danger-active-bg: var(--color-danger-active);  
+    --button-danger-text: var(--color-white);
+
+    /* Borders and Shadows */
+    --border-radius: 8px; 
+    --border-radius-big: 12px;
+    --border-width: 2px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    --font-family-sans: 'Poppins', sans-serif;
+    --line-height-base: 1.6;
+    --font-weight-light: 200;
+    --font-weight-normal: 400;
+    --font-weight-slight-bold: 500;
+    --font-weight-bold: 600;
+    --font-weight-real-bold: 800;
+}
+
+button {
+    border-radius: var(--border-radius);
+    border: none;
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+    
+    cursor: pointer;
+    
+    color: var(--color-white);
+    font-size: 1rem;
+    font-family: var(--font-family-sans);
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-slight-bold);
+    
+    transition: background-color 0.3s;
+}
+
+button.small {
+    font-size: 0.7rem;
+}
+
+/* Primary buttons */
+
+button.primary {
+    background-color: var(--button-primary-bg);
+}
+button.primary:hover {
+    background-color: var(--button-primary-hover-bg);
+}
+button.primary:active {
+    background-color: var(--button-primary-active-bg);
+}
+
+
+/* Secondary buttons */
+button.secondary {
+    background-color: var(--button-secondary-bg);
+}
+button.secondary:hover {
+    background-color: var(--button-secondary-hover-bg);
+}
+button.secondary:active {
+    background-color: var(--button-secondary-active-bg);
+}
+
+/* Tertiary buttons */
+button.tertiary {
+    background-color: var(--button-tertiary-bg);
+}
+button.tertiary:hover {
+    background-color: var(--button-tertiary-hover-bg);
+}
+button.tertiary:active {
+    background-color: var(--button-tertiary-active-bg);
+}
+
+
+/* Danger buttons */
+button.danger {
+    background-color: var(--button-danger-bg);
+    color: var(--button-danger-text);
+}
+button.danger:hover {
+    background-color: var(--button-danger-hover-bg);
+}
+button.danger:active {
+    background-color: var(--button-danger-active-bg);
+}
+
+/* Link Preview */
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--button-primary-bg);
+    border-radius: var(--border-radius);
+    border: none;
+    padding: 0.5rem 1rem;
+    box-shadow: none;
+    
+    cursor: pointer;
+    
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 0.8rem;
+    font-family: var(--font-family-sans);
+    line-height: var(--line-height-base);
+    font-weight: var(--font-weight-bold);
+    
+    transition: background-color 0.3s;
+}
+
+.link:hover {
+    background-color: var(--button-primary-hover-bg);
+}

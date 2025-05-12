@@ -1,0 +1,261 @@
+.profile-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  transition: box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.profile-header {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #001789;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.profile-details {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  margin: 15px 0;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  color: #001789;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #001789;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-info {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  gap: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+.error-message {
+  color: #d9534f;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  animation: fadeIn 0.5s ease;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #001789;
+  font-weight: 600;
+}
+
+
+@media (min-width: 600px) {
+  .profile-container {
+    max-width: 85%;
+    padding: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .profile-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .profile-name {
+    font-size: 1.8rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+
+  .profile-info {
+    font-size: 1.1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .profile-container {
+    max-width: 800px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .profile-header {
+    font-size: 2.5rem;
+  }
+
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-info {
+    font-size: 1.2rem;
+  }
+
+  .profile-actions {
+    /* justify-content: space-between; */
+    gap: 20px;
+  }
+
+  .button {
+    padding: 12px 25px;
+  }
+}
+
+
+/* edit form */
+
+
+.edit-profile-form {
+  width: 100%;
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.edit-profile-form div {
+  margin-bottom: 10px;
+}
+
+.edit-profile-form label {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.edit-profile-form input[type="text"],
+.edit-profile-form input[type="date"],
+.edit-profile-form input[type="file"],
+.edit-profile-form select {
+  width: calc(100% - 20px);
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 auto;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.edit-profile-form button {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.3s ease, transform 0.3s ease;
+  margin-right: 5px;
+}
+
+/* Media Query: Tablet (schermi medi) */
+@media (min-width: 600px) {
+  .edit-profile-form {
+    max-width: 75%;
+    padding: 20px;
+  }
+
+  .edit-profile-form input[type="text"],
+  .edit-profile-form input[type="date"],
+  .edit-profile-form input[type="file"],
+  .edit-profile-form select {
+    font-size: 1rem;
+    width: calc(100% - 24px);
+  }
+
+  .edit-profile-form label {
+    font-size: 1rem;
+  }
+
+  .edit-profile-form button {
+    font-size: 1rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .edit-profile-form {
+    max-width: 500px;
+    padding: 25px;
+  }
+
+  .edit-profile-form label {
+    font-size: 1rem;
+  }
+
+  .edit-profile-form input[type="text"],
+  .edit-profile-form input[type="date"],
+  .edit-profile-form input[type="file"],
+  .edit-profile-form select {
+    font-size: 1rem;
+    width: calc(100% - 24px);
+  }
+
+  .edit-profile-form button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

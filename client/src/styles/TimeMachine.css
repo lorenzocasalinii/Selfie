@@ -1,0 +1,72 @@
+.time-machine, .modal-header{
+    font-family: 'Poppins';
+}
+
+.modal-header{
+    margin-bottom: 0;
+}
+
+.current-time{
+    color: rgb(151, 151, 151);
+    margin: 0;
+    font-family: 'Figtree';
+    margin-left: 2px;
+    margin-bottom: 30px;
+}
+
+.time-machine-controls {
+    display: flex;
+    align-items: stretch;  
+    justify-content: baseline;
+    width: 100%;
+    height: auto;  
+}
+
+input[type="datetime-local"] {
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Poppins';
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+input[type="datetime-local"]:focus {
+    outline: none;
+    border: 1px solid #526eff;
+}
+
+  .time-machine h3{
+    font-weight: 300;
+    margin-top: 30px;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .tm-active{
+    color: var(--color-primary);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .tm-not-active{
+    color: var(--color-danger);
+    font-weight: var(--font-weight-bold);
+  }
+
+  .modal-content{
+    margin: 0 15px ;
+  }
+
+  @media (max-width:492px){
+    .reset-button{
+        margin-top: 5px;
+        margin-left: 0;
+        background-color: #ffffff;
+    }
+
+    .time-machine-controls{
+        flex-wrap: wrap;
+    }
+  }

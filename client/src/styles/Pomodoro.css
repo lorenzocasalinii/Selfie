@@ -1,0 +1,378 @@
+.pomodoro {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.pomodoro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  width: 100%;
+  border-bottom: #ccd1ec6d solid 1px;
+  background-color: #fff;
+}
+
+.pomodoro-calendar-title {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-primary);
+  color: var(--color-primary);
+  font-size: 25px;
+  margin: 0;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.pomodoro-nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 38%;
+  color: #ccd1ec;
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+}
+
+.pomodoro-nav-page {
+  border-radius: 15px;
+  border: #ccd1ec solid 1px;
+  padding: 5px;
+  color: #a6add1;
+}
+
+.pomodoro-nav i {
+  color: #001789;
+  font-size: 26px;
+}
+
+.left-pomodoro {
+  background-color: #001789;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-pomodoro img{
+  width: 7vw;
+  height: auto;
+  margin-bottom: 0.7vh;
+}
+
+.left-pomodoro h1 {
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 3vw;
+  margin: 0;
+  
+}
+
+.study-form {
+  padding: 20px;
+  border-radius: 10px;
+  height: auto;
+  width: 60%;
+  background-color: white;
+  color: black;
+}
+
+.pomo-info-form {
+  margin-top: 10px;
+  position: relative;
+}
+
+.but-start{
+  margin-top: 20px;
+}
+
+.vertical-layout{
+  width: 50%;
+  align-self: center;
+}
+
+
+.pomodoro-applyers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 5px;
+}
+
+.pomo-info-form input {
+  font-size: 16px;
+  font-family: "Figtree";
+  padding: 1vh 1vw;
+  width: 90%;
+  margin-top: 1px;
+  border: unset;
+  height: 5vh;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+.pomo-info-form label {
+  font-family: "Figtree";
+}
+
+.pomodoro-body{
+  display: flex;
+}
+
+.right-pomodoro{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-layout{
+  display: none;
+}
+
+.short-label{
+  display: none;
+}
+
+
+.proposal-button {
+  display: inline-block;
+  text-wrap: nowrap;
+  max-height: 14vh;
+  background-color: #fff; 
+  color: var(--color-primary); 
+  font-family: 'Figtree';
+  font-size: 2.3vw; 
+  padding: 10px 20px; 
+  margin: 10px 5px; 
+  border: none; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+        transition: all 0.3s ease; 
+}
+
+.proposal-button:hover {
+  transform: scale(1.1);
+}
+
+.form-proposals{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0;
+}
+
+.or{
+  display: none;
+}
+
+.pomo-button{
+  margin-top: 20px;
+  font-size: 1.3vw;
+} 
+
+.pomo-button:nth-child(4){
+  border: 0;
+  background-color: var(--color-danger-hover);
+  font-weight: 700;
+}
+
+.pomo-button:nth-child(4):hover{
+  transform: scale(1.05);
+}
+
+
+.share-button, .pause-start-button{
+  margin-top: 10px;
+  color: var(--color-primary);
+  cursor: pointer;
+  
+}
+
+.pause-start-button{
+  font-size: 5vw;
+  margin-left: 25px;
+}
+
+.share-button{
+  font-size: 2.5vw;
+  margin-right: 25px;
+}
+
+.btn-email-sender{
+  margin-top: 0;
+  padding: 2%;
+}
+
+.pomo-button:disabled, .pause-start-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+
+@media (max-width: 649px){
+
+  .pomodoro-body{
+    flex-direction: column;
+  }
+
+  .left-pomodoro{
+    height: 40vh;
+    width: 100vw;
+    background-color: #fff;    
+    justify-content: flex-start;
+  }
+
+
+  .study-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 0.5fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 25vh;
+    width: 90vw;
+    padding-top: 10px;
+  }
+
+  .pomo-info-form:nth-child(1){
+    grid-area: 1 / 1 / 2 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+  }
+
+  .pomo-info-form:nth-child(1) .short-label{
+    font-size: 4vw;
+    color: var(--pomodoro-third-color);
+    font-family: 'Figtree';
+    font-weight: 400;
+    width: 35%;
+  }
+
+  .pomo-info-form:nth-child(1) input{
+    width: 12%;
+    font-size: 25px;
+    background-color: #93ceff77;
+    font-weight: 700;
+    color: #001789;
+    box-shadow: none;
+  }
+
+  .or{ 
+    display: block;
+    grid-area: 2 / 1 / 3 / 4; 
+    color: #93cefffd;
+    font-family: 'Poppins';
+    font-weight: 200;
+  }
+
+
+  .horizontal-layout{
+    display: none;
+  }
+
+  .vertical-layout{
+    display: block;
+  }
+
+  .left-pomodoro img{
+    display: none;
+  }
+
+  .left-pomodoro h1{
+    font-size: 6.4vw;
+    color: #fff;
+    width: 100vw;
+    background-color:  #001789;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .pomo-info-form{
+    text-align: center;
+  }
+
+
+  .pomo-info-form input{
+    height: auto;
+    width: 45px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #93ceff77;
+    color: var(--color-primary); 
+    box-shadow: none;
+  }
+
+  .pomo-info-form label{
+    font-size: 4vw;
+    text-wrap: wrap;
+    font-weight: 400;
+  }
+
+  .short-label{
+    display: block;
+    color: var(--pomodoro-third-color);
+    font-weight: 700;
+  }
+
+  .long-label{
+    display: none;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+.pomo-info-form input::-webkit-outer-spin-button,
+.pomo-info-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.pomo-info-form input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.pomo-button{
+  font-size: 2.5vw;
+}
+
+.right-pomodoro{
+  width: 100%;
+}
+  
+.proposal-button{
+  font-size: 3vw; 
+  padding: 5px 10px; 
+  margin: 5px 2px; 
+}
+
+.pause-start-button{
+  font-size: 9vw
+}
+
+.share-button{
+  font-size: 6vw;
+}
+
+.pomodoro-calendar-title{
+  font-size: 6vw;
+}
+}

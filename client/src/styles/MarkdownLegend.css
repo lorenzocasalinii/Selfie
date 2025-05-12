@@ -1,0 +1,136 @@
+/* Modifiche al CSS per MarkdownLegend */
+
+/* Overlay della legenda */
+.markdown-legend-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+/* Card della legenda */
+.markdown-legend-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 80%;
+  font-family: 'Figtree', sans-serif;
+}
+
+/* Titolo della card */
+.markdown-legend-card h2 {
+  font-size: 1.5rem;
+  color: #001789;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Paragrafi nella card */
+.markdown-legend-card p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Sezione della legenda */
+.legend-section {
+  margin-bottom: 20px;
+}
+
+.legend-section h3 {
+  font-size: 1.2rem;
+  color: #0036d0;
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: 'Figtree', sans-serif;
+}
+
+.legend-section ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.legend-section li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #4a4a4a;
+}
+
+.legend-section code {
+  background: #f4f4f4;
+  color: #001789;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+/* Pulsante di chiusura */
+.close-legend-button {
+  background: linear-gradient(135deg, #284bff, #001789);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.close-legend-button:hover {
+  background: #0036d0;
+}
+
+/* Icona Tux */
+.tux-icon {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  top: 20px;
+}
+
+@media (max-width: 768px) {
+  .markdown-legend-card {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+
+  .markdown-legend-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .markdown-legend-card p {
+    font-size: 0.9rem;
+  }
+
+  .legend-section h3 {
+    font-size: 1rem;
+  }
+
+  .legend-section li {
+    font-size: 0.9rem;
+  }
+
+  .close-legend-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .tux-icon {
+    width: 40px;
+  }
+}

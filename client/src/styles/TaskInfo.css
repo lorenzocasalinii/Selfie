@@ -1,0 +1,91 @@
+.task-info {
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.task-info h2 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.task-info h2.overdue {
+  background-color: var(--color-task-overdue);
+}
+
+.task-info h2.completed {
+  background-color: var(--color-task-completed);
+}
+
+.task-info h2.late {
+  background-color: var(--color-task-late);
+}
+
+.task-info h2.pending {
+  background-color: var(--color-task-pending);
+}
+
+.task-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.task-info p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.task-info .all-day-indicator {
+  font-style: italic;
+  color: #777;
+}
+
+.task-info .overdue {
+  font-weight: bold;
+}
+
+.task-info .time-zone {
+  margin-bottom: 15px;
+}
+
+.task-info .action-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.task-info button.pending {
+  background-color: var(--color-task-pending);
+}
+.task-info button.pending:hover {
+  background-color: var(--color-task-pending-hover);
+}
+
+.task-info button.completed {
+  background-color: var(--color-task-completed);
+}
+.task-info button.completed:hover {
+  background-color: var(--color-task-completed-hover);
+}
+
+
+.event-info button.leave {
+  background-color: var(--color-danger);
+}
+
+.event-info button.leave:hover {
+  background-color: var(--color-danger-hover);
+}
